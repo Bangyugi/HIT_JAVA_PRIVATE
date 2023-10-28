@@ -1,4 +1,4 @@
-package buoi1;
+package buoi1.assignments;
 
 import java.util.Scanner;
 
