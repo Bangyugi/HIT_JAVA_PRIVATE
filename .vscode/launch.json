@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Bai1",
+            "request": "launch",
+            "mainClass": "buoi1.assignments.Bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai2",
+            "request": "launch",
+            "mainClass": "buoi1.assignments.Bai2",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "bai3",
+            "request": "launch",
+            "mainClass": "buoi1.assignments.bai3",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "bai4",
+            "request": "launch",
+            "mainClass": "buoi1.assignments.bai4",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "bai5",
+            "request": "launch",
+            "mainClass": "buoi1.assignments.bai5",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai1(1)",
+            "request": "launch",
+            "mainClass": "buoi2.assignments.Bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai2(1)",
+            "request": "launch",
+            "mainClass": "buoi2.assignments.Bai2",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai3",
+            "request": "launch",
+            "mainClass": "buoi2.assignments.Bai3",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai4",
+            "request": "launch",
+            "mainClass": "buoi2.assignments.Bai4",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai1(2)",
+            "request": "launch",
+            "mainClass": "buoi2.example_contest.Bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai2(2)",
+            "request": "launch",
+            "mainClass": "buoi2.example_contest.Bai2",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Array_in_java",
+            "request": "launch",
+            "mainClass": "buoi2.prepared_in_advance.Array_in_java",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Arraylist_in_java",
+            "request": "launch",
+            "mainClass": "buoi2.prepared_in_advance.Arraylist_in_java",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Hang_va_bien_trong_java",
+            "request": "launch",
+            "mainClass": "buoi2.study_in_class.Hang_va_bien_trong_java",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Mang_trong_java",
+            "request": "launch",
+            "mainClass": "buoi2.study_in_class.Mang_trong_java",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Tess_1",
+            "request": "launch",
+            "mainClass": "buoi3.assignments_at_class.Tess_1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Tess_2",
+            "request": "launch",
+            "mainClass": "buoi3.assignments_at_class.Tess_2",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "OOP_trong_java",
+            "request": "launch",
+            "mainClass": "buoi3.study_in_class.OOP_trong_java",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        }
+    ]
+}
