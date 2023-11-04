@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Bai1_vegetable",
+            "request": "launch",
+            "mainClass": "buoi3.assignment.Bai1_vegetable",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Staff_manager",
+            "request": "launch",
+            "mainClass": "buoi3.prepare_in_advance.Staff_manager",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

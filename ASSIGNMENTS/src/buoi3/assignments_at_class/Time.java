@@ -63,19 +63,20 @@ public class Time {
         }
     }
 
-    public String format(String n) {
-        int m = Integer.parseInt(n);
-        if (m < 10) {
-            n = "0" + n;
-        }
-        return n;
-    }
+    // public String format(String n) {
+    //     int m = Integer.parseInt(n);
+    //     if (m < 10) {
+    //         n = "0" + n;
+    //     }
+    //     return n;
+    // }
 
     public void display() {
-        String sHour = Integer.toString(hour);
-        String sMinute = Integer.toString(minute);
-        String sSecond = Integer.toString(second);
-        System.out.println(format(sHour) + ":" + format(sMinute) + ":" + format(sSecond));
+        // String sHour = Integer.toString(hour);
+        // String sMinute = Integer.toString(minute);
+        // String sSecond = Integer.toString(second);
+        // System.out.println(format(sHour) + ":" + format(sMinute) + ":" + format(sSecond));
+        System.out.printf("%02d:%02d:%02d\n", this.hour, this.minute, this.second);
     }
 
 }

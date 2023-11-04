@@ -6,7 +6,7 @@ public class Account {
     private int ID;
     private String name;
     private int balance;
-    private int amount;
+    // private int amount;
 
     public Account(int ID, String name) {
         this.ID = ID;
