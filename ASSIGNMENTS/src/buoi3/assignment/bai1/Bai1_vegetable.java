@@ -9,16 +9,16 @@ public class Bai1_vegetable {
         Scanner scan = new Scanner(System.in);
         ArrayList<Vegetable> list = new ArrayList<>();
         // ------------ EXAMPLE LIST INPUT ------------
-        Vegetable v1 = new Vegetable("1", "Carrot", "Kg", 15, 5, 10000);
-        Vegetable v2 = new Vegetable("2", "Potato", "Kg", 10, 5, 10000);
-        Vegetable v3 = new Vegetable("3", "Tomato", "Kg", 5, 5, 5000);
-        Vegetable v4 = new Vegetable("4", "Green Chilli", "G", 20, 0, 3000);
-        Vegetable v5 = new Vegetable("5", "Beans", "G", 5, 10, 10000);
-        list.add(v1);
-        list.add(v2);
-        list.add(v3);
-        list.add(v4);
-        list.add(v5);
+        // Vegetable v1 = new Vegetable("1", "Carrot", "Kg", 15, 5, 10000);
+        // Vegetable v2 = new Vegetable("2", "Potato", "Kg", 10, 5, 10000);
+        // Vegetable v3 = new Vegetable("3", "Tomato", "Kg", 5, 5, 5000);
+        // Vegetable v4 = new Vegetable("4", "Green Chilli", "G", 20, 0, 3000);
+        // Vegetable v5 = new Vegetable("5", "Beans", "G", 5, 10, 10000);
+        // list.add(v1);
+        // list.add(v2);
+        // list.add(v3);
+        // list.add(v4);
+        // list.add(v5);
         while (true) {
 
             System.out.print("\n-------------------------------------\n");
