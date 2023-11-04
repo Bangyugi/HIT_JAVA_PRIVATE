@@ -1,4 +1,4 @@
-package buoi3.assignment;
+package buoi3.assignment.bai1;
 
 import java.util.ArrayList;
 import java.util.Collections;

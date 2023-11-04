@@ -1,4 +1,4 @@
-package buoi3.assignment;
+package buoi3.assignment.bai2;
 
 public class Subject {
     private String id;

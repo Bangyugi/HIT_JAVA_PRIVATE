@@ -1,4 +1,4 @@
-package buoi3.assignment;
+package buoi3.assignment.bai1;
 
 public class Vegetable {
     private String id;
