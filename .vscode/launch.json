@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test_code",
+            "request": "launch",
+            "mainClass": "Test_code",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai2_timeTable",
+            "request": "launch",
+            "mainClass": "buoi3.assignment.Bai2_timeTable",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "Bai1_vegetable",
             "request": "launch",
             "mainClass": "buoi3.assignment.Bai1_vegetable",
