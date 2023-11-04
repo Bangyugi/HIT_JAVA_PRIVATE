@@ -1,3 +1,4 @@
+
 package buoi3.assignment.bai2;
 
 import java.util.ArrayList;
@@ -8,6 +9,18 @@ public class Bai2_timeTable {
     public static void main(String[] args) {
         ArrayList<Subject> list = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
+        // // ------------ EXAMPLE LIST INPUT ------------
+        // Subject s1 = new Subject("1", "Androi dev", 15, "12:30", "14:20");
+        // Subject s2 = new Subject("2", "Java back-end", 12, "14:30", "17:20");
+        // Subject s3 = new Subject("3", "Database system", 14, "15:30", "17:20");
+        // Subject s4 = new Subject("4", "Object-oriented programing", 17, "13:30",
+        // "16:20");
+        // Subject s5 = new Subject("5", "Basic programing", 20, "18:00", "20:00");
+        // list.add(s1);
+        // list.add(s2);
+        // list.add(s3);
+        // list.add(s4);
+        // list.add(s5);
         while (true) {
             System.out.print("\n----------------------------------------\n");
             System.out.print("                    MENU                    ");
@@ -38,19 +51,6 @@ public class Bai2_timeTable {
                     Subject subject = new Subject(ID, subjectName, sutdentCount, timeStart,
                             timeEnd);
                     list.add(subject);
-
-                    // ------------ EXAMPLE LIST INPUT ------------
-                    // Subject s1 = new Subject("1", "Androi dev", 15, "12:30", "14:20");
-                    // Subject s2 = new Subject("2", "Java back-end", 12, "14:30", "17:20");
-                    // Subject s3 = new Subject("3", "Database system", 14, "15:30", "17:20");
-                    // Subject s4 = new Subject("4", "Object-oriented programing", 17, "13:30",
-                    // "16:20");
-                    // Subject s5 = new Subject("5", "Basic programing", 20, "18:00", "20:00");
-                    // list.add(s1);
-                    // list.add(s2);
-                    // list.add(s3);
-                    // list.add(s4);
-                    // list.add(s5);
 
                     break;
                 }
