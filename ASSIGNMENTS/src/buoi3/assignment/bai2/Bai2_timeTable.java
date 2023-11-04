@@ -67,8 +67,12 @@ public class Bai2_timeTable {
                     break;
                 }
                 case 4: {
-                    Collections.sort(list, new sortByMinutes());
+                    ArrayList<Subject> temporarilyList = new ArrayList<>();
+                    for (Subject subject : list) {
+                        temporarilyList.add(subject);
+                    }
 
+                    Collections.sort(temporarilyList, new sortByMinutes());
                     System.out.print("Input time start time: ");
                     String start = scan.nextLine();
                     int startTime = Integer.parseInt(start.substring(0, 2)) * 60
@@ -82,7 +86,7 @@ public class Bai2_timeTable {
                             + Integer.parseInt(end.substring(3, 5));
 
                     for (Subject subject : list) {
-                        if (subject.getStartMinutes() > temp && subject.getEndMinutes() < endTime) {
+                        if (subject.getStartMinutes() >= temp && subject.getEndMinutes() <= endTime) {
                             temp = subject.getEndMinutes();
                             count++;
                         }
@@ -94,7 +98,7 @@ public class Bai2_timeTable {
 
                     temp = startTime;
                     for (Subject subject : list) {
-                        if (subject.getStartMinutes() > temp && subject.getEndMinutes() < endTime) {
+                        if (subject.getStartMinutes() >= temp && subject.getEndMinutes() <= endTime) {
                             temp = subject.getEndMinutes();
                             subject.display();
                         }
