@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Bai2_computer_room",
+            "request": "launch",
+            "mainClass": "buoi4.assignments.bai2_computer_room.Bai2_computer_room",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai1_books_menu",
+            "request": "launch",
+            "mainClass": "buoi4.assignments.bai_1_books.Bai1_books_menu",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Static",
+            "request": "launch",
+            "mainClass": "buoi4.study_in_class.Static",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "Bai1_vegetable",
             "request": "launch",
             "mainClass": "buoi3.assignment.bai1.Bai1_vegetable",
