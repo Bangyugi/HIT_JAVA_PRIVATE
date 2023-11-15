@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "extra_assignment.Main",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "Bai2_computer_room",
             "request": "launch",
             "mainClass": "buoi4.assignments.bai2_computer_room.Bai2_computer_room",

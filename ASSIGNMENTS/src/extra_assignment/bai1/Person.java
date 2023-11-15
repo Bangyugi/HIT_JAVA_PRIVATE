@@ -1,4 +1,4 @@
-package extra_assignment;
+package extra_assignment.bai1;
 
 public class Person {
     private String name;
@@ -56,6 +56,15 @@ public class Person {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Ten: " + getName() + "\n" +
+                "Tuoi: " + getAge() + "\n" +
+                "Gioi tinh: " + getGender() + "\n" +
+                "Dia chi: " + getAddress() + "\n" +
+                "So dien thoai: " + getPhoneNumber();
     }
 
 }
