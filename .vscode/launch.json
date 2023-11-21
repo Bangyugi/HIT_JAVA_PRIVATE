@@ -8,6 +8,48 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "buoi5.bai_tap_tren_lop.Main",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "buoi5.bai2.Main",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "ClassRoom",
+            "request": "launch",
+            "mainClass": "buoi5.bai1.ClassRoom",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "extra_assignment.bai3.Demo",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "buoi5.study_in_class.Inheritance.Main",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Arraylist_in_java",
+            "request": "launch",
+            "mainClass": "buoi5.study_in_class.Arraylist_in_java",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "extra_assignment.Main",
             "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
         },
