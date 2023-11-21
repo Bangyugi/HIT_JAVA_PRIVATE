@@ -43,9 +43,9 @@ public class Seller extends Person {
 
     public void output() {
         System.out.println("---\nSeller");
-        System.out.println("Seller's code: " + getCode());
+        System.out.println("Ma nguoi ban: " + getCode());
         super.output();
-        System.out.println("Phone number: " + numberPhone);
+        System.out.println("So dien thoai: " + numberPhone);
 
     }
 

@@ -112,10 +112,11 @@ public class Invoice {
     }
 
     public void output() {
-        System.out.println("Invoice's code: " + getCode());
-        System.out.println("Invoice's date: " + getDate());
+        System.out.println("Ma hoa don: " + getCode());
+        System.out.println("Ngay lap: " + getDate());
         seller.output();
         customer.output();
+        System.out.println("Hinh thuc thanh toan: " + getPaymentMethod());
     }
 
 }

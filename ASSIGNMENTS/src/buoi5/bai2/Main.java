@@ -1,6 +1,8 @@
 package buoi5.bai2;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
@@ -26,23 +28,48 @@ public class Main {
     }
 
     public static void case2(Scanner scan) {
+        Collections.sort(invoiceDetails, new Comparator<InvoiceDetail>() {
+            public int compare(InvoiceDetail a, InvoiceDetail b) {
+                if (a.getPrice() - b.getPrice() < 0)
+                    return 1;
+                return -1;
+            }
+        });
         for (Invoice invoice : invoices) {
             System.out.println(invoice.getCode());
         }
         System.out.print("Input invoice code: ");
         String code = scan.nextLine();
+
+        System.out.println("\n                               HOA DON BAN HANG                               \n");
+        System.out.println();
         for (Invoice invoice : invoices) {
             if (invoice.getCode().equals(code)) {
                 invoice.output();
             }
         }
-
+        System.out.println(
+                "------------------------------------------------------------------------------------------------");
+        System.out.printf("| %-25s | %-15s | %-10s | %-10s | %-20s |\n", "Ten hang hoa, dich vu", "Don vi tinh",
+                "So luong", "Don gia", "Thanh Tien");
+        System.out.println(
+                "------------------------------------------------------------------------------------------------");
         for (InvoiceDetail invoiceDetail : invoiceDetails) {
             if (invoiceDetail.getInvoice().getCode().equals(code)) {
                 invoiceDetail.output();
             }
         }
+        System.out.println(
+                "------------------------------------------------------------------------------------------------");
+        int addUP = 0;
+        for (InvoiceDetail invoiceDetail : invoiceDetails) {
+            if (invoiceDetail.getInvoice().getCode().equals(code)) {
+                addUP += invoiceDetail.getTotal();
+            }
+        }
+        System.out.println("Tong tien can thanh toan: " + addUP);
         System.out.println();
+
     }
 
     public static void case3() {
@@ -61,7 +88,7 @@ public class Main {
 
     public static void case5() {
         for (Good good : goods) {
-            good.output();
+            good.output(2);
         }
         System.out.println();
     }

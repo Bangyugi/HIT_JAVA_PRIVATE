@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class InvoiceDetail {
     private Invoice invoice;
-    private static Good good;
+    private Good good;
     private int quantity;
     private int price;
 
@@ -17,10 +17,6 @@ public class InvoiceDetail {
         this.price = price;
     }
 
-    public static Good getGood() {
-        return good;
-    }
-
     public Invoice getInvoice() {
         return invoice;
     }
@@ -29,12 +25,16 @@ public class InvoiceDetail {
         this.invoice = invoice;
     }
 
-    public static void setGood(Good good) {
-        InvoiceDetail.good = good;
-    }
-
     public int getQuantity() {
         return quantity;
+    }
+
+    public Good getGood() {
+        return good;
+    }
+
+    public void setGood(Good good) {
+        this.good = good;
     }
 
     public void setQuantity(int quantity) {
@@ -80,9 +80,14 @@ public class InvoiceDetail {
 
     }
 
+    public int getTotal() {
+        return getPrice() * getQuantity();
+    }
+
     public void output() {
-        good.output();
-        System.out.println("Quantity: " + getQuantity());
-        System.out.println("Price: " + getPrice());
+        good.output(1);
+        System.out.printf("| %-10s | %-10s | %-20s |\n", getQuantity(), getPrice(), getTotal());
+        // System.out.println("Quantity: " + getQuantity());
+        // System.out.println("Price: " + getPrice());
     }
 }

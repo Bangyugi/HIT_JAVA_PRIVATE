@@ -44,10 +44,14 @@ public class Good {
         this.unit = scan.nextLine();
     }
 
-    public void output() {
-        System.out.println("---\nGood");
-        System.out.println("Name: " + getName());
-        System.out.println("Unit: " + getUnit());
+    public void output(int flag) {
+        if (flag == 1)
+            System.out.printf("| %-25s | %-15s ", getName(), getUnit());
+        else {
+            System.out.println("---\nGood");
+            System.out.println("Name: " + getName());
+            System.out.println("Unit: " + getUnit());
+        }
     }
 
 }

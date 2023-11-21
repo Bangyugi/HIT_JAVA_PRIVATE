@@ -40,7 +40,7 @@ public class Customer extends Person {
 
     public void output() {
         System.out.println("---\nCustomer ");
-        System.out.println("Customer's code: " + getCode());
+        System.out.println("Ma khach hang: " + getCode());
         super.output();
     }
 

@@ -76,9 +76,9 @@ public class Person {
     }
 
     public void output() {
-        System.out.println("Name: " + getName());
-        System.out.println("Address: " + getAddress());
-        System.out.println("Number of banking account: " + getSTK());
+        System.out.println("Ten: " + getName());
+        System.out.println("Dia chi: " + getAddress());
+        System.out.println("So tai khoan: " + getSTK());
     }
 
 }
