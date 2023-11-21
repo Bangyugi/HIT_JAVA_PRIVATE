@@ -28,11 +28,6 @@ public class Customer extends Person {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return "Customer [code=" + code + "]";
-    }
-
     public void input(String code) {
         setCode(code);
         super.input();

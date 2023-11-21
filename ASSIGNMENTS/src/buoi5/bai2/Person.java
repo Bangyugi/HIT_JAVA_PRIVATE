@@ -67,11 +67,11 @@ public class Person {
     Scanner scan = new Scanner(System.in);
 
     public void input() {
-        System.out.print("Input name: ");
+        System.out.print("Nhap ten: ");
         this.name = scan.nextLine();
-        System.out.print("Input address: ");
+        System.out.print("Nhap dia chi: ");
         this.address = scan.nextLine();
-        System.out.print("Input STK: ");
+        System.out.print("Nhap so tai khoan: ");
         this.STK = scan.nextLine();
     }
 

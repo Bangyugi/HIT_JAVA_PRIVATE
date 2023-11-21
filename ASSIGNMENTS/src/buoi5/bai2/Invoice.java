@@ -64,15 +64,15 @@ public class Invoice {
     Scanner scan = new Scanner(System.in);
 
     public void input(ArrayList<Seller> sellers, ArrayList<Customer> customers) {
-        System.out.print("Input invoice's code: ");
+        System.out.print("Nhap ma hoa don: ");
         this.code = scan.nextLine();
-        System.out.print("Input invoice's date: ");
+        System.out.print("Nhap ngay lap hoa don: ");
         this.date = scan.nextLine();
         Seller seller = new Seller();
         Customer customer = new Customer();
 
         boolean check = false;
-        System.out.print("Input seller code: ");
+        System.out.print("Nhap ma nguoi ban: ");
         String sellerCode = scan.nextLine();
         for (Seller x : sellers) {
             if (x.getCode().equals(sellerCode)) {
@@ -90,7 +90,7 @@ public class Invoice {
         }
 
         check = false;
-        System.out.print("Input customer code: ");
+        System.out.print("Nhap ma khach hang: ");
         String customerCode = scan.nextLine();
         for (Customer x : customers) {
             if (x.getCode().equals(customerCode)) {
@@ -107,7 +107,7 @@ public class Invoice {
             setCustomer(customer);
         }
 
-        System.out.print("Input invoice's payment method: ");
+        System.out.print("Nhap hinh thuc thanh toan: ");
         this.paymentMethod = scan.nextLine();
     }
 

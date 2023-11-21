@@ -40,7 +40,7 @@ public class Good {
     public void intput(String name) {
 
         setName(name);
-        System.out.print("Input unit: ");
+        System.out.print("Nhap don vi: ");
         this.unit = scan.nextLine();
     }
 

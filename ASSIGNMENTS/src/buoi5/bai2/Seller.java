@@ -37,7 +37,7 @@ public class Seller extends Person {
     public void input(String code) {
         setCode(code);
         super.input();
-        System.out.print("Input phone number: ");
+        System.out.print("Nhap so dien thoai: ");
         this.numberPhone = scan.nextLine();
     }
 

@@ -12,36 +12,12 @@ public class Main {
     static ArrayList<InvoiceDetail> invoiceDetails = new ArrayList<>();
     static ArrayList<Invoice> invoices = new ArrayList<>();
 
-    public static void case1(Scanner scan) {
-        Invoice invoice = new Invoice();
-        invoice.input(sellers, customers);
-        invoices.add(invoice);
-        System.out.println();
-        System.out.print("Input the amount of goods: ");
-        int n = scan.nextInt();
-        for (int i = 0; i < n; i++) {
-            InvoiceDetail invoiceDetail = new InvoiceDetail();
-            invoiceDetail.input(invoice, goods);
-            invoiceDetails.add(invoiceDetail);
-        }
-        System.out.println();
-    }
+    public static void option1(Scanner scan, String code) {
 
-    public static void case2(Scanner scan) {
-        Collections.sort(invoiceDetails, new Comparator<InvoiceDetail>() {
-            public int compare(InvoiceDetail a, InvoiceDetail b) {
-                if (a.getPrice() - b.getPrice() < 0)
-                    return 1;
-                return -1;
-            }
-        });
-        for (Invoice invoice : invoices) {
-            System.out.println(invoice.getCode());
-        }
-        System.out.print("Input invoice code: ");
-        String code = scan.nextLine();
+        System.out.println("\n---\n");
 
-        System.out.println("\n                               HOA DON BAN HANG                               \n");
+        System.out.println(
+                "\n                                        HOA DON BAN HANG                                        \n");
         System.out.println();
         for (Invoice invoice : invoices) {
             if (invoice.getCode().equals(code)) {
@@ -69,7 +45,79 @@ public class Main {
         }
         System.out.println("Tong tien can thanh toan: " + addUP);
         System.out.println();
+    }
 
+    public static void option2(String code) {
+        Good good = new Good();
+        int max_value = 0;
+        for (InvoiceDetail x : invoiceDetails) {
+            if (x.getInvoice().getCode().equals(code)) {
+                if (x.getQuantity() > max_value) {
+                    good = x.getGood();
+                    max_value = x.getQuantity();
+                }
+            }
+        }
+        good.output(2);
+
+    }
+
+    public static void case1(Scanner scan) {
+        Invoice invoice = new Invoice();
+        invoice.input(sellers, customers);
+        invoices.add(invoice);
+        System.out.println();
+        System.out.print("Nhap so luong hang hoa: ");
+        int n = scan.nextInt();
+        for (int i = 0; i < n; i++) {
+            InvoiceDetail invoiceDetail = new InvoiceDetail();
+            invoiceDetail.input(invoice, goods);
+            invoiceDetails.add(invoiceDetail);
+        }
+        System.out.println();
+    }
+
+    public static void case2(Scanner scan) {
+        Collections.sort(invoiceDetails, new Comparator<InvoiceDetail>() {
+            public int compare(InvoiceDetail a, InvoiceDetail b) {
+                if (a.getPrice() - b.getPrice() < 0)
+                    return 1;
+                return -1;
+            }
+        });
+        System.out.println("Cac hoa don da duoc luu: ");
+        for (Invoice invoice : invoices) {
+            System.out.println(invoice.getCode());
+        }
+        System.out.print("Nhap ma phieu muon mo: ");
+        String code = scan.nextLine();
+
+        boolean flag = true;
+        while (flag) {
+            System.out.println("(1). In ra phieu: ");
+            System.out.println("(2). Tim thong tin san pham co so luong lon nhat: ");
+            System.out.println("(3). Back");
+            System.out.print("Nhap lua chon: ");
+            int choice = scan.nextInt();
+            scan.nextLine();
+            switch (choice) {
+                case 1: {
+                    option1(scan, code);
+                    break;
+                }
+                case 2: {
+                    option2(code);
+                    break;
+                }
+                case 3: {
+                    flag = false;
+                    break;
+                }
+
+                default:
+                    break;
+            }
+        }
     }
 
     public static void case3() {
@@ -97,15 +145,14 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("--- MENU ---");
-        System.out.println("(1) Create an invoice ");
-        System.out.println("(2) Open an invoice");
-        System.out.println("(3) Show all customer");
-        System.out.println("(4) Show all seller");
-        System.out.println("(5) Show all goods");
-
         while (true) {
-            System.out.print("Input your decision: ");
+            System.out.println("--- MENU ---");
+            System.out.println("(1) Tao mot hoa don moi");
+            System.out.println("(2) Mo mot hoa don");
+            System.out.println("(3) In ra tat ca khach hang duoc luu");
+            System.out.println("(4) In ra tat ca nguoi ban duoc luu");
+            System.out.println("(5) In ra tat ca hang hoa duoc luu");
+            System.out.print("Nhap lua chon: ");
             int choice = scan.nextInt();
             scan.nextLine();
 

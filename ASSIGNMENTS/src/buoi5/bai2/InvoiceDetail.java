@@ -54,7 +54,7 @@ public class InvoiceDetail {
     public void input(Invoice invoice, ArrayList<Good> goods) {
         setInvoice(invoice);
 
-        System.out.print("Input good's name: ");
+        System.out.print("Nhap ten hang hoa, dich vu: ");
         String name = scan.nextLine();
         Good good = new Good();
         boolean check = false;
@@ -72,9 +72,9 @@ public class InvoiceDetail {
             setGood(good);
         }
 
-        System.out.print("Input quantity: ");
+        System.out.print("Nhap so luong hang hoa: ");
         this.quantity = scan.nextInt();
-        System.out.print("Input price: ");
+        System.out.print("Nhap gia cua moi hang hoa: ");
         this.price = scan.nextInt();
         scan.nextLine();
 
