@@ -179,7 +179,9 @@ public class Main {
                     break;
                 }
                 case 6: {
-                    break;
+                    scan.close();
+                    System.out.println("Exited!");
+                    return;
                 }
 
                 default:
