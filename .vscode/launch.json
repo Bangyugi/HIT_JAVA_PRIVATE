@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MenuMain",
+            "request": "launch",
+            "mainClass": "buoi6.assignments.bai2.MenuMain",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "MenuMain",
+            "request": "launch",
+            "mainClass": "buoi6.assignments.bai1.MenuMain",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Lmao",
+            "request": "launch",
+            "mainClass": "Lmao",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "buoi6.lesson.Main",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "buoi5.bai_tap_tren_lop.Main",
