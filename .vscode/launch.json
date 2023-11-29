@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "code_vui.bai2.Main",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "bai1",
+            "request": "launch",
+            "mainClass": "code_vui.bai1.bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "bai1",
+            "request": "launch",
+            "mainClass": "bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai1",
+            "request": "launch",
+            "mainClass": "code_vui.bai1.Bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Bai1",
+            "request": "launch",
+            "mainClass": "Code_vui.bai1.Bai1",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "MenuMain",
             "request": "launch",
             "mainClass": "buoi6.assignments.bai2.MenuMain",
