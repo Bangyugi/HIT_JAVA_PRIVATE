@@ -32,6 +32,7 @@ public class Main {
             int choice = scan.nextInt();
             switch (choice) {
                 case 1: {
+                    studentServiceImpl.addStudent(list);
                     break;
                 }
 

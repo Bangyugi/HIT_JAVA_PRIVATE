@@ -9,8 +9,21 @@ public class StudentServiceImpl implements StudentService {
     Scanner scan = new Scanner(System.in);
 
     public void addStudent(ArrayList<Student> list) {
-        Address address = new Address();
-        Student student = new Student();
+
+        System.out.print("Input student's name: ");
+        String name = scan.nextLine();
+        System.out.print("Input student's age: ");
+        short age = scan.nextShort();
+        scan.nextLine();
+        System.out.print("Input student's district: ");
+        String district = scan.nextLine();
+        System.out.print("Input student's city: ");
+        String city = scan.nextLine();
+        System.out.print("Input student's score: ");
+        double score = scan.nextDouble();
+        scan.nextLine();
+        Address address = new Address(district, city);
+        Student student = new Student(name, age, address, score);
         list.add(student);
     }
 
