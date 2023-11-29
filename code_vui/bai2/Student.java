@@ -38,7 +38,7 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return super.toString() + "Student [score=" + score + "]" + getCapacity(score);
+        return super.toString() + "\nStudent [score=" + score + "]" + getCapacity(score);
     }
 
 }
