@@ -31,9 +31,9 @@ public class StudentServiceImpl implements StudentService {
         System.out.print("Input student's id whose you want to delete: ");
         int keyID = scan.nextInt();
         scan.nextLine();
-        for (Student student : list) {
-            if (student.getId() == keyID) {
-                list.remove(student);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getId() == keyID) {
+                list.remove(list.get(i));
             }
         }
     }
