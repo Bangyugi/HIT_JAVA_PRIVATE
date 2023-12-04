@@ -37,7 +37,7 @@ public class Main {
                 }
 
                 case 2: {
-                    studentServiceImpl.deleteStudent(list);
+
                     break;
                 }
 

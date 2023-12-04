@@ -1,16 +1,28 @@
 package code_vui.bai_tap_tren_lop;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void choice1(ArrayList<Student> list, Scanner scan) {
+    static int listSize = 0;
+
+    public static void dummyData(Student list[]) {
+        Student student1 = new Student("Tran Van Bang", 19, "Ha Tinh", "001");
+        list[0] = student1;
+        listSize++;
+        Student student2 = new Student("Dong Binh Nam", 19, "Lam Dong", "002");
+        list[1] = student2;
+        listSize++;
+    }
+
+    public static void choice1(Student list[], Scanner scan) {
 
         System.out.print("Nhap so luong sinh vien ban muon them: ");
         int n = scan.nextInt();
         scan.nextLine();
-        for (int i = 0; i < n; i++) {
+        for (int i = listSize; i < listSize + n; i++) {
             System.out.print("Nhap ma sinh vien: ");
             String studentId = scan.nextLine();
             System.out.print("Nhap ten sinh vien: ");
@@ -21,26 +33,27 @@ public class Main {
             System.out.print("Nhap dia chi: ");
             String address = scan.nextLine();
             Student student = new Student(name, age, address, studentId);
-            list.add(student);
+            list[i] = student;
         }
+        listSize += n;
     }
 
-    public static void choice2(ArrayList<Student> list) {
-        if (list.isEmpty()) {
+    public static void choice2(Student list[]) {
+        if (listSize == 0) {
             System.out.println("Danh sach sinh vien rong.");
         } else {
             System.out.println("Danh sach sinh vien:");
-            for (Student student : list) {
-                student.output();
+            for (int i = 0; i < listSize; i++) {
+                list[i].output();
             }
         }
     }
 
-    public static void choice3(ArrayList<Student> list, Scanner scan) {
+    public static void choice3(Student list[], Scanner scan) {
         System.out.print("Nhap ma sinh vien ban muon sua: ");
         String id = scan.nextLine();
-        for (Student student : list) {
-            if (student.getStudentId().equals(id)) {
+        for (int i = 0; i < listSize; i++) {
+            if (list[i].getStudentId().equals(id)) {
                 System.out.print("Nhap ma sinh vien: ");
                 String studentId = scan.nextLine();
                 System.out.print("Nhap ten sinh vien: ");
@@ -50,37 +63,62 @@ public class Main {
                 scan.nextLine();
                 System.out.print("Nhap dia chi: ");
                 String address = scan.nextLine();
-                student.setName(name);
-                student.setAge(age);
-                student.setStudentId(studentId);
-                student.setAddress(address);
+                list[i].setName(name);
+                list[i].setAge(age);
+                list[i].setStudentId(studentId);
+                list[i].setAddress(address);
             }
         }
     }
 
-    public static void choice4(ArrayList<Student> list, Scanner scan) {
+    public static void choice4(Student list[], Scanner scan) {
         System.out.print("Nhap ten sinh vien ban muon kiem tra: ");
         String name = scan.nextLine();
-        for (Student student : list) {
-            if (student.getName().equals(name)) {
-                student.study();
+        for (int i = 0; i < listSize; i++) {
+            if (list[i].getName().equals(name)) {
+                list[i].study();
             }
         }
     }
 
-    public static void choice5(ArrayList<Student> list, Scanner scan) {
+    public static void choice5(Student list[], Scanner scan) {
         System.out.print("Nhap ma sinh vien ban muon xoa: ");
         String id = scan.nextLine();
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getStudentId().equals(id)) {
-                list.remove(list.get(i));
+        for (int i = 0; i < listSize; i++) {
+            if (list[i].getStudentId().equals(id)) {
                 System.out.println("Da Xoa thong tin sinh vien");
+                for (int j = i; j < listSize - 1; j++) {
+                    list[j] = list[j + 1];
+                }
+                listSize -= 1;
             }
         }
+    }
+
+    public static void choice6(Student list[]) {
+        Arrays.sort(list, 0, listSize, new Comparator<Student>() {
+            public int compare(Student a, Student b) {
+                if (a.getAge() > b.getAge())
+                    return -1;
+                else
+                    return 1;
+            }
+        });
+
+        // for (int i = 0; i < listSize - 1; i++) {
+        // for (int j = i + 1; j < listSize; j++) {
+        // if (list[i].getAge() < list[j].getAge()) {
+        // Student temp = list[i];
+        // list[j] = list[i];
+        // list[i] = temp;
+        // }
+        // }
+        // }
     }
 
     public static void main(String[] args) {
-        ArrayList<Student> list = new ArrayList<>();
+        Student list[] = new Student[100000];
+        dummyData(list);
         while (true) {
             System.out.println("\n-------MENU-------");
             System.out.println("(1). Them sinh vien");
@@ -88,7 +126,8 @@ public class Main {
             System.out.println("(3). Sua thong tin sinh vien");
             System.out.println("(4). Sinh vien con di hoc hay khong");
             System.out.println("(5). Xoa sinh vien");
-            System.out.println("(6). Thoat chuong trinh");
+            System.out.println("(6). Sap xep sinh vien theo tuoi giam dan");
+            System.out.println("(7). Thoat chuong trinh");
 
             System.out.print("Nhap lua chon: ");
             Scanner scan = new Scanner(System.in);
@@ -117,7 +156,12 @@ public class Main {
                     break;
                 }
                 case 6: {
+                    choice6(list);
+                    break;
+                }
+                case 7: {
                     System.out.println("Da Thoat");
+                    scan.close();
                     return;
                 }
 

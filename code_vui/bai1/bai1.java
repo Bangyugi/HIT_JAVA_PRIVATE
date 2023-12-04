@@ -68,6 +68,7 @@ public class bai1 {
         } else {
             System.out.println("False");
         }
+        scan.close();
         // System.out.println(s.charAt(0));
     }
 }
