@@ -1,4 +1,4 @@
-package extra_assignment.bai2;
+package code_vui.extra_assignment.bai1;
 
 public class Employee extends Person {
     private String department;

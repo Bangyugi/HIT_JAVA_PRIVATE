@@ -1,4 +1,4 @@
-package extra_assignment.bai1;
+package code_vui.extra_assignment.bai1;
 
 public class Person {
     private String name;

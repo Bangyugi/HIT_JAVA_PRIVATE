@@ -1,4 +1,4 @@
-package extra_assignment.bai3;
+package code_vui.extra_assignment.bai3;
 
 public class Labor {
     private String ID;

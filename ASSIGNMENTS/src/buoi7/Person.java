@@ -1,4 +1,4 @@
-package buoi8;
+package buoi7;
 
 public abstract class Person {
     private String id;

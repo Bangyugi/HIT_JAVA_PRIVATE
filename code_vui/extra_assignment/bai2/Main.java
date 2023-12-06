@@ -1,4 +1,4 @@
-package extra_assignment.bai2;
+package code_vui.extra_assignment.bai2;
 
 import java.util.Scanner;
 
