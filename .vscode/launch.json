@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Lmao",
+            "request": "launch",
+            "mainClass": "code_vui.extra_assignment.bai4.Lmao",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "code_vui.extra_assignment.bai4.Test",
+            "projectName": "HIT_JAVA_PRIVATE_c50cdf14"
+        },
+        {
+            "type": "java",
             "name": "MenuMain",
             "request": "launch",
             "mainClass": "code_vui.bai3.MenuMain",
